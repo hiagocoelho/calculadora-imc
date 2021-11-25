@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="./js/index.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <link rel="shortcut icon" href="./favicon.png">
+</head>
+<body>
+    <p class="title">Calculadora de índice de massa corporal (IMC)</p>
+    <div class="container">
+        <p>Insira seus dados abaixo:</p>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" autocomplete="off">
+        <label for="peso">Peso<i>(kg)</i>:</label>
+        <input type="number" name="peso" id="peso" autocomplete="off">
+        <label for="altura">Altura<i>(m)</i>:</label>
+        <input type="number" name="altura" id="altura" autocomplete="off">
+        <div class="buttons">
+            <button class="clear" onclick="clearAllData()">Limpar dados</button>
+            <button class="calc" onclick="calculateIMC()">Calcular</button>
+        </div>
+        <div class="resultado">
+            <span id="resultado">&nbsp;</span>
+        </div>
+    </div>
+</body>
+</html>
